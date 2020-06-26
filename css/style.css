@@ -1,3 +1,73 @@
+* {
+  font-family: "Sarala", sans-serif; }
 
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.page-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
+
+.page-container__left {
+  display: flex;
+  min-width: 80%;
+  max-width: 90%; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 108px;
+  flex-basis: 100%; }
+
+.nav-left {
+  padding-left: 10em; }
+
+.nav-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.nav__item__text {
+  margin: 0 0 0 1em;
+  color: #72ccca; }
+
+.nav__item__text--btn {
+  padding: 0.5em 2em;
+  background: #72ccca;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer; }
+  .nav__item__text--btn:hover {
+    background-color: #41908e; }
+
+.nav__item--hamburger {
+  display: flex; }
+
+.nav__item__button {
+  width: 2em;
+  border: none;
+  background: none; }
+
+.nav__item__button--ham, .nav__item__button--x {
+  color: #72ccca;
+  cursor: pointer;
+  outline: none; }
+  .nav__item__button--ham:hover, .nav__item__button--x:hover {
+    color: #41908e; }
+
+.nav__item__button--x {
+  display: none; }
+
+.hidden-btn {
+  display: none; }
+
+.page-container__right {
+  background-color: #72ccca;
+  width: 0px;
+  transition: width 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
