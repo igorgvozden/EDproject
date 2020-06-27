@@ -127,7 +127,7 @@ html, body {
     padding-top: 50px;
     position: relative;
     background: $lightBackground;
-    min-height: 550px;
+    min-height: 500px;
     flex-basis: 100%;
 }
 
@@ -197,11 +197,63 @@ html, body {
 
 .services {
     flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: $lightBackground;
+    text-align: center;
 }
 
 .services__title {
     @include dualColorTitle;
+    flex-basis: 100%;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 85%;
+}
+
+.services-container__box {
+    margin: 1em;
+    padding: 1em;
+    min-height: 445px;
+    min-width: 20%;
+    position: relative;
+}
+
+.services-container__box__image {
+    position: relative;
+    z-index: 2;
+}
+
+.services-container__box__body {
+    padding: 8em 1em 3em;
+    border-radius: 25px;
+    background-color: $boxesColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 9em;
+    z-index: 1;
+}
+
+.services-container__box__body-title {
+    text-transform: uppercase;
+    color: $boxesFontColor;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.services-container__box__button {
+    @include whiteButton;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -6em;
+    z-index: 2;
 }
 
 // right side -- menu bar
