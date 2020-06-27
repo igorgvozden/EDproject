@@ -213,6 +213,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     min-width: 85%;
+    padding-bottom: 10em;
 }
 
 .services-container__box {
@@ -254,6 +255,50 @@ html, body {
     transform: translate(-50%);
     bottom: -6em;
     z-index: 2;
+}
+
+// services-info section 
+
+.services-info {
+    background-position: center;
+    background-size: cover;
+    flex-basis: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-info__container {
+    padding: 2em 4em;
+    min-width: 55%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.services-info__container__categories-col {
+    font-size: 20px;
+}
+
+.services-info__container__title {
+    @include dualColorTitle;
+    font-size: 23px;
+}
+
+.services-info__container__categories {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-angle-right {
+    color: $mainColor;
+}
+
+.active-service {
+    background-color: $mainColor;
+    color: white;
 }
 
 // right side -- menu bar

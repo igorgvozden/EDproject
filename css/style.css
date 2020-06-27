@@ -207,7 +207,8 @@ html, body {
 .services-container {
   display: flex;
   justify-content: space-between;
-  min-width: 85%; }
+  min-width: 85%;
+  padding-bottom: 10em; }
 
 .services-container__box {
   margin: 1em;
@@ -256,6 +257,51 @@ html, body {
     background: #72ccca;
     color: white;
     cursor: pointer; }
+
+.services-info {
+  background-position: center;
+  background-size: cover;
+  flex-basis: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.services-info__container {
+  padding: 2em 4em;
+  min-width: 55%;
+  background-color: white;
+  border-radius: 25px; }
+
+.services-info__container__categories-col {
+  font-size: 20px; }
+
+.services-info__container__title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #72ccca;
+  letter-spacing: 7px;
+  font-size: 26px;
+  font-size: 23px; }
+  .services-info__container__title span {
+    text-transform: uppercase;
+    color: #999999;
+    letter-spacing: 7px;
+    font-weight: 700; }
+
+.services-info__container__categories {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between; }
+
+.fa-angle-right {
+  color: #72ccca; }
+
+.active-service {
+  background-color: #72ccca;
+  color: white; }
 
 .page-container__right {
   background-color: #72ccca;
