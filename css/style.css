@@ -270,7 +270,7 @@ html, body {
 
 .services-info__container {
   padding: 2em 4em;
-  min-width: 55%;
+  flex-basis: 70%;
   background-color: white;
   border-radius: 25px; }
 
@@ -302,6 +302,63 @@ html, body {
 .active-service {
   background-color: #72ccca;
   color: white; }
+
+.mission {
+  flex-basis: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center; }
+
+.mission-container {
+  flex-basis: 100%;
+  background-color: #72ccca;
+  position: relative; }
+
+.mission-container__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 77%; }
+
+.mission-container__content-left {
+  flex-basis: 60%; }
+
+.mission-container__content-left__title {
+  color: white;
+  font-size: 30px; }
+  .mission-container__content-left__title span {
+    font-weight: 800; }
+
+.mission-container__content-left__text {
+  color: white;
+  line-height: 2; }
+
+.mission-container__content-left__button {
+  margin: 0;
+  width: 130px;
+  background: white;
+  padding: 0.5em 2em;
+  color: #72ccca;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -35px;
+  font-size: 22px;
+  padding: 1em 2.5em;
+  width: 280px;
+  text-align: center; }
+  .mission-container__content-left__button:hover {
+    background: #72ccca;
+    color: white;
+    cursor: pointer; }
+
+.mission-container__content-right {
+  margin: -40px 0;
+  width: 353px;
+  height: 500px;
+  border-radius: 25px; }
 
 .page-container__right {
   background-color: #72ccca;

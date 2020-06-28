@@ -272,7 +272,7 @@ html, body {
 
 .services-info__container {
     padding: 2em 4em;
-    min-width: 55%;
+    flex-basis: 70%;
     background-color: white;
     border-radius: 25px;
 }
@@ -299,6 +299,63 @@ html, body {
 .active-service {
     background-color: $mainColor;
     color: white;
+}
+
+// our mission section
+
+.mission {
+    flex-basis: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.mission-container {
+    flex-basis: 100%;
+    background-color: $mainColor;
+    position: relative;
+}
+
+.mission-container__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 77%;
+}
+
+.mission-container__content-left {
+    flex-basis: 60%;
+}
+
+.mission-container__content-left__title {
+    color: white;
+    font-size: 30px;
+
+    span {
+        font-weight: 800;
+    }
+}
+
+.mission-container__content-left__text {
+    color: white;
+    line-height: 2;
+}
+
+.mission-container__content-left__button {
+    @include whiteButton;
+    position: absolute;
+    bottom: -35px;
+    font-size: 22px;
+    padding: 1em 2.5em;
+    width: 280px;
+    text-align: center;
+}
+
+.mission-container__content-right {
+    margin: -40px 0;
+    width: 353px;
+    height: 500px;
+    border-radius: 25px;
 }
 
 // right side -- menu bar
