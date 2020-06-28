@@ -41,3 +41,33 @@ window.onload = () => {
     serviceButtons[0].classList.add("active-service");
     serviceButtons[0].innerHTML = "see below";
 };
+
+// contact section -- form
+
+let locationForm = document.getElementById("location");
+let stateForm = document.getElementById("state");
+
+locationForm.addEventListener("change", () => {
+    if (locationForm.value === "1") {
+        stateForm.classList.remove("select-hide")
+    } else {
+        stateForm.classList.add("select-hide")
+    }
+});
+
+function validateForm() {
+    let firstName = document.getElementById("first-name");
+    let lastName = document.getElementById("last-name");
+    let informator = document.querySelector(".contact-container__form-container__informator");
+
+    if (firstName.value.length < 3) {
+        informator.innerHTML = "First Name must have at least 3 characters";
+        return false;
+    }
+
+    if (lastName.value.length < 3) {
+        informator.innerHTML = "First Name must have at least 3 characters";
+        return false;
+    }
+    return true;
+};

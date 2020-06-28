@@ -358,6 +358,139 @@ html, body {
     border-radius: 25px;
 }
 
+// contact section 
+
+.contact {
+    position: relative;
+    flex-basis: 100%;
+    background-color: $lightBackground;
+    padding-bottom: 10em;
+}
+
+.contact-background {
+    min-width: 100%;
+    min-height: 770px;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-container {
+    position: absolute;
+    top: 4em;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    text-align: center;
+}
+
+.contact-container__title {
+    @include dualColorTitle;
+}
+
+.contact-container__text {
+    font-size: 20px;
+    padding-bottom: 2em;
+}
+
+.contact-container__form-container {
+    padding: 2em;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 20px 50px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container__form-container__title {
+    color: $mainColor;
+    font-size: 21px;
+
+    span {
+        font-weight: 800;
+    }
+}
+
+.contact-container__form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em 3em; 
+    
+}
+
+.contact-container__form-container__informator {
+    color: red;
+}
+
+.contact-form__input {
+    margin: 0.5em;
+    flex-basis: 47%;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border: 1px solid $titleFormFooter;
+    box-sizing: border-box;
+    outline: none;
+
+    &::placeholder {
+        color: $placeholderText;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+select {
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-form__input--select {
+    flex-basis: 100%;
+    background-image:
+      linear-gradient(45deg, transparent 50%, $mainColor 50%),
+      linear-gradient(135deg, $mainColor 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 30px) calc(1em + 7px),
+      calc(100% - 25px) calc(1em + 7px),
+      calc(100% - 2.5em);
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 0;
+    background-repeat: no-repeat;
+}
+
+.contact-form__input--textarea {
+    flex-basis: 100%;
+    resize: none;
+}
+
+.contact-form__submit-btn {
+    border: none;
+    @include whiteButton;
+    background-color: $mainColor;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -68px;
+    font-size: 22px;
+    padding: 1em 2.5em;
+    width: 280px;
+    text-align: center;
+}
+
+.select-hide {
+    display: none;
+}
+
 // right side -- menu bar
 
 .page-container__right {

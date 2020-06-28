@@ -172,6 +172,46 @@
                     </div>
                 </div>
             </section>
+
+            <section class="contact">
+                <div class="contact-background" style="background-image: url('images/homebackground.png');"></div>
+
+                <div class="contact-container">
+                    <p class="contact-container__title">get in<span> touch</span></p>
+                    <p class="contact-container__text">
+                        To inquire about services, appointments, or to leave any questions or comments for us, <br/>
+                        please fill out the contact form or call us today!
+                    </p>
+
+                    <div class="contact-container__form-container">
+                        <p class="contact-container__form-container__title">Contact <span>Our Team</span></p>
+                        <p class="contact-container__form-container__informator"></p>
+
+                        <form class="contact-container__form" method="POST" onsubmit="return validateForm()">
+                            <input class="contact-form__input" type="text" name="first-name" id="first-name" placeholder="First Name" required/>
+                            <input class="contact-form__input" type="text" name="last-name" id="last-name" placeholder="Last Name" required/>
+                            <input class="contact-form__input" type="email" name="email" id="email" placeholder="Email Address" required/>
+                            <input class="contact-form__input" type="number" name="phone" id="phone" placeholder="Phone" required/>
+
+                            <select class="contact-form__input contact-form__input--select" name="location" id="location">
+                                <option value="0" disabled selected>Location</option>
+                                <option value="1">USA</option>
+                                <option value="2">Other</option>
+                            </select>
+
+                            <select class="contact-form__input contact-form__input--select select-hide"  name="state" id="state">
+                                <option value="california">California</option>
+                                <option value="florida">Florida</option>
+                                <option value="texas">Texas</option>
+                            </select>
+
+                            <textarea class="contact-form__input contact-form__input--textarea" rows="4" name="message" id="message" placeholder="Message"></textarea>
+
+                            <input class="contact-form__submit-btn" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <div class="page-container__right">
