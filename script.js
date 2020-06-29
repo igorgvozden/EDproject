@@ -1,17 +1,20 @@
 let hamburgerBtn = document.querySelector(".nav__item__button--ham");
 let closeBtn = document.querySelector(".nav__item__button--x");
 let menu = document.querySelector(".page-container__right");
+let menuContent = document.querySelector(".page-container__right-content");
 
 // this toggles menu view 
 
 hamburgerBtn.addEventListener("click", () => {
     hamburgerBtn.style.display = "none";
     menu.style.width = "290px";
+    menuContent.style.display = "block";
     closeBtn.style.display = "block";
 });
 
 closeBtn.addEventListener("click", () => {
     closeBtn.style.display = "none";
+    menuContent.style.display = "none";
     menu.style.width = "0px";
     hamburgerBtn.style.display = "block";
 });
