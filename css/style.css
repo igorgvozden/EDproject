@@ -294,6 +294,7 @@ html, body {
 .services-info__container__categories {
   padding: 1em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
 
 .fa-angle-right {
@@ -364,7 +365,7 @@ html, body {
   position: relative;
   flex-basis: 100%;
   background-color: #f8f8f8;
-  padding-bottom: 10em; }
+  padding-bottom: 7em; }
 
 .contact-background {
   min-width: 100%;
@@ -417,7 +418,10 @@ html, body {
   padding: 2em 3em; }
 
 .contact-container__form-container__informator {
-  color: red; }
+  color: red;
+  background: #f8f8f8;
+  border-radius: 15px;
+  width: 100%; }
 
 .contact-form__input {
   margin: 0.5em;
@@ -480,6 +484,66 @@ select {
 
 .select-hide {
   display: none; }
+
+.social {
+  flex-basis: 100%;
+  background-color: #f8f8f8; }
+
+.social__title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #72ccca;
+  letter-spacing: 7px;
+  font-size: 26px; }
+  .social__title span {
+    text-transform: uppercase;
+    color: #999999;
+    letter-spacing: 7px;
+    font-weight: 700; }
+
+.social__container {
+  display: flex;
+  margin: 3em 0;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.social__container__box--hidden {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #267a7991;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  transition: height 0.5s;
+  visibility: hidden; }
+
+.social__container__box--hidden-likes,
+.social__container__box--hidden-text {
+  color: white;
+  flex-basis: 100%;
+  text-align: center; }
+
+.social__container__box--hidden-likes {
+  padding-top: 5em; }
+
+.social__container__box--hidden-text {
+  font-size: 0.7em; }
+
+.social__container__box {
+  position: relative;
+  flex-basis: 20%;
+  min-width: 250px;
+  height: 380px;
+  background-position: center; }
+  .social__container__box:hover {
+    cursor: pointer; }
+    .social__container__box:hover .social__container__box--hidden {
+      visibility: visible;
+      height: 100%; }
 
 .page-container__right {
   background-color: #72ccca;

@@ -289,6 +289,7 @@ html, body {
 .services-info__container__categories {
     padding: 1em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -364,7 +365,7 @@ html, body {
     position: relative;
     flex-basis: 100%;
     background-color: $lightBackground;
-    padding-bottom: 10em;
+    padding-bottom: 7em;
 }
 
 .contact-background {
@@ -419,6 +420,9 @@ html, body {
 
 .contact-container__form-container__informator {
     color: red;
+    background: $lightBackground;
+    border-radius: 15px;
+    width: 100%;
 }
 
 .contact-form__input {
@@ -490,6 +494,71 @@ select {
 .select-hide {
     display: none;
 }
+
+// social section 
+
+.social {
+    flex-basis: 100%;
+    background-color: $lightBackground;
+}
+
+.social__title {
+    @include dualColorTitle;
+}
+
+.social__container {
+    display: flex;
+    margin: 3em 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social__container__box--hidden {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $mainColorTransparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    transition: height 0.5s;
+    visibility: hidden;
+}
+
+.social__container__box--hidden-likes, 
+.social__container__box--hidden-text {
+    color: white;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.social__container__box--hidden-likes {
+    padding-top: 5em;
+}
+
+.social__container__box--hidden-text {
+    font-size: 0.7em;
+}
+.social__container__box {
+    position: relative;
+    flex-basis: 20%;
+    min-width: 250px;
+    height: 380px;
+    background-position: center;
+
+    &:hover {
+        cursor: pointer;
+
+        .social__container__box--hidden {
+            visibility: visible;
+            height: 100%;
+        }
+    }
+}
+
+
 
 // right side -- menu bar
 
